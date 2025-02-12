@@ -17,7 +17,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-      
+
       $categories = Category::all();
         return view('admin.category.index',compact('categories'));
     }
@@ -25,9 +25,10 @@ class CategoryController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Category $category)
     {
-        //
+
+        return view('admin.category.form');
     }
 
     /**
@@ -35,7 +36,17 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+        ]);
+
+        $store = new Category();
+        $store->title = $request->title;
+        $store->save();
+        // return redirect()->route('admin.category.index');
+        return response()->json([
+            'message' => 'Post added successfully'
+        ]);
     }
 
     /**
@@ -65,8 +76,11 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return response()->json([
+            'message'=>'Post deleted successfylly'
+        ]);
     }
 }

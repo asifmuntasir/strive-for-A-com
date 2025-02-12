@@ -24,6 +24,7 @@
                     <tr>
                         <th>No</th>
                         <th>Name</th>
+                        <th>Email</th>
 
                         <th>Action</th>
                     </tr>
@@ -35,6 +36,7 @@
             <tr>
                 <td>{{ $key+1 }}</td>
                 <td>{{ $teacher->name }}</td>
+                <td>{{ $teacher->email }}</td>
                 {{-- <td>{{ $question->type }}</td> --}}
 
 

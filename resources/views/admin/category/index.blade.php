@@ -4,7 +4,7 @@
 @section('admin_content')
 
 <x-admin.page-title dashboard_title="admin" title="category" page_name="All category">
-    <a href="#" class="btn btn-success" id="addBtn">Add category</a>
+    <a href="{{ route('admin.category.create') }}" class="btn btn-success" id="addBtn">Add category</a>
 </x-admin.page-title>
 
 
@@ -43,7 +43,7 @@
 
                 {{-- <td>{{ $question->created_at->format("M-h-D") }}</td> --}}
                 <td>
-                    <a href="{{ route('admin.category.edit',$category->id)  }}" class="btn btn-outline-success btn-sm" ><i class="fas fa-pencil-alt"></i></a>
+                    {{-- <a href="{{ route('admin.category.edit',$category->id)  }}" class="btn btn-outline-success btn-sm" ><i class="fas fa-pencil-alt"></i></a> --}}
                     <a href="{{ route('admin.category.destroy',$category->id)  }}" class="btn btn-outline-danger btn-sm" id="deleteBtn"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>

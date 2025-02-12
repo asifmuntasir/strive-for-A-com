@@ -147,7 +147,16 @@
             <h5 class="font-size-16 pt-3"> Category: {{ $post->category->title }} </h5>
             <h5 class="font-size-16 pt-"> {{ $post->title }} </h5>
             <p class="mb-0 mt- text-muted" style="font-size: 16px">
-        {{ $post->description }}</p>
+        {{ $post->description }}</p><br/>
+
+        @if ($post->image == null)
+
+        @else
+        <div class="">
+            <img class="img-thumbnail" alt="200x200" style="width: autot; height: 200px;"
+             src="{{ uploaded_file($post->image) }}" data-holder-rendered="true">
+        </div>
+        @endif
         </div>
 
     </div>
