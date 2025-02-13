@@ -5,7 +5,7 @@
 
 
     <meta charset="utf-8" />
-    <title>TMS</title>
+    <title>StriveForA+</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('/admin') }}/assets/images/favicon.ico">
@@ -22,7 +22,16 @@
     <!-- App Css-->
     <link href="{{ asset('/admin') }}/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+<style>
+    .logo-design{
+        color: #3D8D7A;
+        cursor: pointer;
+    }
 
+    .logo-design:hover{
+        color: #C14600;
+    }
+</style>
 
 </head>
 
@@ -36,7 +45,7 @@
                 <div class="d-flex">
                     <!-- LOGO -->
                     <div class="navbar-brand-box">
-
+                    <h2 class="navbar-brand logo-design display-2">StriveForA+</h2>
                     </div>
 
                     <button type="button"
@@ -45,13 +54,20 @@
                         <i class="mdi mdi-menu"></i>
                     </button>
 
-                    <div class="topbar-social-icon me-3 d-none d-md-block">
-                        <ul class="list-inline title-tooltip m-0">
-
-
-
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-black">
+                            <li class="nav-item">
+                            <a class="nav-link active"href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
+
 
                 </div>
 
@@ -206,7 +222,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign
+                                Designed <i class="mdi mdi-heart text-danger"></i> by Asif Muntasir
                             </div>
                         </div>
                     </div>

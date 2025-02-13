@@ -5,6 +5,7 @@
             <div class="d-flex">
 
                    <!-- LOGO -->
+                    <!-- StriveForA+ -->
              <div class="navbar-brand-box">
                 {{-- <a href="#" class="logo logo-dark">
                     <span class="logo-sm">
@@ -14,7 +15,6 @@
                         <img src="{{ uploaded_file($logoIcon->logo) }}" alt="" style="height: 45px; width:auto">
                     </span>
                 </a>
-
                 <a href="#" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="{{ uploaded_file($logoIcon->dark_logo) }}" alt="" style="height: 20px; width:auto">

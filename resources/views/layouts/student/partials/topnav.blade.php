@@ -5,7 +5,7 @@
                     <div class="collapse navbar-collapse" id="topnav-menu-content">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('dashboard') }}">
+                                <a class="nav-link text-black" href="{{ route('dashboard') }}">
                                     {{-- <i class="dripicons-home me-2"></i> --}}
                                      Dashboard
                                 </a>
@@ -20,10 +20,6 @@
                                      Course
                                 </a>
                             </li> --}}
-
-
-
-
                         </ul>
                     </div>
                 </nav>

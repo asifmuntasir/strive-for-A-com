@@ -4,7 +4,8 @@
 <header id="page-topbar">
     <div class="navbar-header">
         <div class="d-flex">
-            <!-- LOGO -->
+        StriveForA+
+        
             <div class="navbar-brand-box">
                 {{-- <a href="{{ route('dashboard') }}" class="logo logo-dark">
                     <span class="logo-sm">

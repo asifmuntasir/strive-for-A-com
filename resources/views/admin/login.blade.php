@@ -129,8 +129,8 @@
                             <p>©
                                 <script>
                                     document.write(new Date().getFullYear())
-                                </script> Morvin. Crafted with <i class="mdi mdi-heart text-danger"></i>
-                                by Themesdesign
+                                </script> Designed <i class="mdi mdi-heart text-danger"></i>
+                                by Asif Muntasir
                             </p>
                         </div> --}}
                     </div>
